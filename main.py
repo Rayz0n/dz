@@ -1,16 +1,35 @@
-# Dz na 26.10.23
+# Dz na 16.11.23
+import random
+
+# №1
+a = random.randint(1, 6)
+print(a)
 
 # №2
-abc = int(input("Число"))
-a = inp//100
-b = inp%100//10
-c = inp%100%10
-print(a, b, c)
+a = random.randint(1, 3)
+b = random.randint(4, 6)
+print(a, b)
 
 # №3
-abc = int(input("Число"))
-a = abc // 100 + abc % 100 // 10 + abc % 100 % 10
-b = abc // 100 * 100
-c = abc % 100 % 10 * 10
-d = abc % 100 // 10
-print(a, b+c+d)
+a = random.randint(1, 90)
+print(a)
+a = random.randint(1, 90)
+print(a)
+a = random.randint(1, 90)
+print(a)
+a = random.randint(1, 90)
+print(a)
+a = random.randint(1, 90)
+print(a)
+
+# №4
+a = random.randint(1, 18)
+print(a)
+a = random.randint(19, 36)
+print(a)
+a = random.randint(37, 54)
+print(a)
+a = random.randint(55, 72)
+print(a)
+a = random.randint(73, 90)
+print(a)
