@@ -1,37 +1,14 @@
-# Dz na 23.11.23
-a = int(input("Антон"))
-b = int(input("Борис"))
-w = int(input("Виктор"))
-
-if a == b == w:
-    print("Все одинакового возраста")
-elif a > b:
-    if a > w:
-        print("Антон старший")
-    elif a == w:
-        print("Антон и Виктор старшие")
-elif a > w:
-    if a > b:
-        print("Антон старший")
-    elif a == b:
-        print("Антон и Борис старшие")
-elif b > a:
-    if b > w:
-        print("Борис старший")
-    elif b == w:
-        print("Борис и Виктор старшие")
-elif b > w:
-    if b > a:
-        print("Борис старший")
-    elif b == a:
-        print("Борис и Антон старшие")
-elif w > a:
-    if w > b:
-        print("Виктор старший")
-    elif w == b:
-        print("Борис и Виктор старшие")
-elif w > b:
-    if w > a:
-        print("Виктор старший")
-    elif w == a:
-        print("Виктор и Антон старшие")
+# Dz na 30.11.23
+a = int(input("Возраст: "))
+h = a % 10
+if a > 110:
+    print(a, "лет")
+elif h == 1 and a != 11:
+    print(a, "год")
+elif h == 2 or h == 3 or h == 4:
+    if (a != 12) or 13 or 14:
+        print(a, "года")
+elif a == 11 or a == 12 or a == 13 or a == 14:
+    print(a, "лет")
+elif h == 5 or h == 6 or h == 7 or h == 8 or h == 9 or h == 0:
+    print(a, "лет")
