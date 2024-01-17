@@ -1,22 +1,11 @@
-# Dz na 28.12.23
+# Dz na 17.01.2024
 
 # №1
-n = int(input("Повторений:"))
-while n > 0:
-    print("Сообщение")
-    n -= 1
+for i in range(2024, -1, -1):
+    print(i)
+print("C новым годом!")
 
 # №2
-i = 1
-summa = 0
-while i <= 100:
-    summa += i
-    i += 1
-print(summa)
-
-# №3
-i = 1
-while i <= 497:
-    if i % 2 == 0:
-        print(i)
-    i += 1
+a = int(input("Введите число: "))
+for i in range(1, 11):
+    print(f"{a}*{i}={a*i}")
