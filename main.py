@@ -1,11 +1,19 @@
-# Dz na 17.01.2024
+# Dz na 25.01.2024
+from graph import *
 
 # №1
-for i in range(2024, -1, -1):
-    print(i)
-print("C новым годом!")
+a = int(input("Число: "))
+b = int(input("Число: "))
+g = a
+for i in range(0, b - 1):
+    g *= a
+print(g)
 
 # №2
-a = int(input("Введите число: "))
-for i in range(1, 11):
-    print(f"{a}*{i}={a*i}")
+penColor("black")
+penSize(3)
+brushColor("blue")
+polygon([(100, 25), (50, 75), (150, 75), (100, 25)])
+brushColor("green")
+rectangle(60, 76, 140, 175)
+run()
