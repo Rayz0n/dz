@@ -1,19 +1,18 @@
-# Dz na 25.01.2024
-from graph import *
+# Dz na 01.02.2024
+import random
 
 # №1
-a = int(input("Число: "))
-b = int(input("Число: "))
-g = a
-for i in range(0, b - 1):
-    g *= a
-print(g)
+a = 0
+for i in range(10):
+    b = random.randint(-300, 300)
+    if b < 0:
+        a += 1  
+print(a)
 
 # №2
-penColor("black")
-penSize(3)
-brushColor("blue")
-polygon([(100, 25), (50, 75), (150, 75), (100, 25)])
-brushColor("green")
-rectangle(60, 76, 140, 175)
-run()
+a = random.randint(-100, 100)
+b = random.randint(-100, 100)
+c = random.randint(-100, 100)
+print(a)
+print(b)
+print(c)
