@@ -2,30 +2,29 @@
 
 // №1
 # include<iostream>
+# include<cmath>
 using namespace std;
 
 int main(){
     int a, b, c;
-    cout << "Введите время в секундах: ";
-    cin >> a;
-    b = a / 60;
-    c = a % 60;
-    cout << b << " мин. " << c << " с." << endl;
+    cout << "Введите число и степень: ";
+    cin >> a >> b;
+    c = pow(a, b);
+    cout << c << endl;
     return 0;
 }  
 
 // №2
 # include<iostream>
+# include<cmath>
 using namespace std;
 
 int main(){
-    int a, b, c, d;
-    cout << "Введите время в секундах: ";
+    int a, b;
+    cout << "Введите отрицательное число: ";
     cin >> a;
-    b = a / 3600;
-    c = (a - (b*3600))/60;
-    d = a - (b * 3600 + c * 60);
-    cout << b << " ч. " << c << " мин. " << d << " с. " << endl ;
+    b = abs(a) + 1;
+    cout << b << endl ;
     return 0;
 }
 
@@ -34,11 +33,9 @@ int main(){
 using namespace std;
 
 int main(){
-    int a, b, c, d;
-    cout << "Введите номер урока: ";
+    int a, b;
+    cout << "Введите объём фотографии в мегабайтах: ";
     cin >> a;
-    d = (8*60+30) + (a * 45 + (a-1) * 10);
-    b = d / 60;
-    c = d - (b * 60);
-    cout << b << "-" << c << endl;
+    b = (1024*2)/a;
+    cout << "Такая фотография поместится " << b << " раз(а)" << endl;
 }
