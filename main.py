@@ -1,8 +1,6 @@
-# na 01.04.24
-
+# dz na 01.04.24
 from math import *
  
-# 1
 a = int(input("Введите число: "))
 if a % 2 == 0:
     print("True")
@@ -43,7 +41,7 @@ else:
     nulei = 0
     while chislo > 0:
         if chislo % 10 > naibolsh:
-            naibolsh = a % 10
+            naibolsh = chislo % 10
         if chislo % 10 % 2 == 0:
             chetnix += 1
         if chislo % 10 == 0:
